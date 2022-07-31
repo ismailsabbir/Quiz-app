@@ -1,4 +1,6 @@
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { AuthProvider } from "../contexts/AuthContext";
 import "../styles/App.css";
 import Layout from "./Layout";
 import Home from "./Pages/Home";
@@ -6,10 +8,8 @@ import Login from "./Pages/Login";
 import Quiz from "./Pages/Quiz";
 import Result from "./Pages/Result";
 import Signup from "./Pages/Signup";
-import React from "react";
 import PrivateRoute from "./PrivateRoute";
 import PublicRoute from "./PublicRoute";
-import { AuthProvider } from "../contexts/AuthContext";
 function App() {
   return (
     <Router>
